@@ -13,7 +13,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="premium.css">
   <script defer src="app.js"></script>
 </head>
 <body class="page-home">
@@ -23,7 +23,7 @@
     <nav class="main-nav" aria-label="Main navigation">
       <a class="nav-link active" href="index.html">The idea</a>
       <a class="nav-link" href="about.html">Inside the system</a>
-      <a class="nav-action" href="#case-lab">Explore the demo <span aria-hidden="true">↗</span></a>
+      <a class="nav-action" href="theater.html">Enter Decision Theater <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
   <main>
@@ -33,7 +33,7 @@
         <h1 id="hero-heading">DON’T<br>GUESS.<br><span>DIAGNOSE.</span></h1>
         <p class="hero-sub">Revenue is slipping. Customers are leaving. Everyone has an answer. <strong>But what if the obvious fix is the wrong one?</strong></p>
         <div class="hero-actions">
-          <a class="btn btn-accent" href="#case-lab">Run a scenario <span>↗</span></a>
+          <a class="btn btn-accent" href="theater.html">Enter Decision Theater <span>↗</span></a>
           <a class="btn btn-outline" href="about.html">Inside the system <span>↗</span></a>
         </div>
         <div class="hero-foot"><span class="tiny-rule"></span><span>CONCEPT + WORKING LAB PROTOTYPE<br>BUILT TO TURN ASSUMPTIONS INTO TESTS</span></div>
@@ -70,7 +70,15 @@
       </div>
     </section>
 
-    <section class="case-section wrap" id="case-lab" aria-labelledby="case-title">
+    <section class="theater-spotlight wrap" aria-label="Decision Theater live prototype">
+  <div class="spotlight-mark"><span class="spotlight-dot"></span> NEW / INTERACTIVE PRODUCT EXPERIENCE <span>RETENTIONLENS 002</span></div>
+  <div class="spotlight-inner">
+    <div><span class="micro-label">THREE INDUSTRIES · FIVE DECISION STAGES</span><h2>THE ANSWER<br>IS NOT ENOUGH.</h2><p>Watch competing explanations survive adversarial challenge. Stress-test the economics. Decide whether a bounded pilot deserves human approval. Download a complete decision record.</p><a class="btn btn-accent" href="theater.html">Explore Decision Theater <span>↗</span></a></div>
+    <div class="spotlight-visual" aria-hidden="true"><div class="spotlight-orbit"><div class="spotlight-core"></div></div><span class="spotlabel l1">01 / EVIDENCE</span><span class="spotlabel l2">02 / DISSENT</span><span class="spotlabel l3">03 / ECONOMICS</span><span class="spotlabel l4">04 / APPROVAL</span><span class="spotlight-foot">FROM DATA TO ACCOUNTABLE DECISION</span></div>
+  </div>
+  <p class="spotlight-caveat">A working, deterministic browser simulation. Not live autonomous agents, enterprise integrations, or verified causal outcomes.</p>
+</section>
+<section class="case-section wrap" id="case-lab" aria-labelledby="case-title">
       <div class="case-heading">
         <div><div class="section-id in-flow">[ 02 ] / THE INTERACTIVE CASE LAB</div><h2 id="case-title">WHAT DOES A<br><em>BETTER DECISION</em> LOOK LIKE?</h2></div>
         <p>Change the assumptions. See how the economics shift. A hypothesis isn't a fact—and a forecast isn't proof.</p>
@@ -108,9 +116,9 @@
       <div class="wrap conversation-grid"><div class="section-id">[ 03 ]<br>GO DEEPER</div><div><p class="kicker">NOW ASK A BETTER QUESTION.</p><h2>YOUR BUSINESS IS<br><em>NOT A TEMPLATE.</em></h2><p>Describe what is changing in your business. The working RetentionLens Lab 3 chatbot explores plausible drivers, asks follow-up questions, and suggests evidence to gather before choosing an intervention.</p><div class="conversation-actions"><button class="btn btn-accent" type="button" data-open-chat>Talk to RetentionLens <span>↗</span></button><a class="text-button" target="_blank" rel="noopener noreferrer" href="https://share.chatling.ai/s/cf9R9Zi2D7esy25">Open full chatbot <span>↗</span></a></div></div></div>
     </section>
 
-    <section class="x-factor-footer wrap" aria-labelledby="xfactor-title"><span class="micro-label" id="xfactor-title">CLASS 5 / CREATIVE X-FACTOR</span><p>The interactive Case Lab lets visitors choose business scenarios and adjust five assumptions to see real-time revenue-risk and intervention-value calculations. Its decision checks highlight why simulated financial upside is not evidence of causality.</p></section>
+    <section class="x-factor-footer wrap" aria-labelledby="xfactor-title"><span class="micro-label" id="xfactor-title">CLASS 5 / CREATIVE X-FACTOR</span><p>Decision Theater lets visitors compare competing hypotheses, examine dissent, test business economics, simulate human approval, and export a decision record. The accompanying Case Lab recalculates revenue scenarios live. Both are clearly labeled demonstrations, not validated AI recommendations.</p></section>
   </main>
-  <footer class="site-footer"><div class="wrap footer-row"><div class="footer-brand">RETENTION<span>LENS</span><small>DECIDE WITH EVIDENCE.</small></div><div><a href="about.html">Inside the system ↗</a><a href="https://share.chatling.ai/s/cf9R9Zi2D7esy25" target="_blank" rel="noopener noreferrer">Working chatbot ↗</a></div><p>Independent concept and educational prototype.<br>© 2026 RetentionLens.</p></div></footer>
+  <footer class="site-footer"><div class="wrap footer-row"><div class="footer-brand">RETENTION<span>LENS</span><small>DECIDE WITH EVIDENCE.</small></div><div><a href="theater.html">Decision Theater ↗</a><a href="about.html">Inside the system ↗</a><a href="https://share.chatling.ai/s/cf9R9Zi2D7esy25" target="_blank" rel="noopener noreferrer">Working chatbot ↗</a></div><p>Independent concept and educational prototype.<br>© 2026 RetentionLens.</p></div></footer>
   <button class="chat-fab" type="button" data-open-chat aria-label="Open RetentionLens chatbot"><span class="chat-fab-dot"></span> ASK RETENTIONLENS <span aria-hidden="true">↗</span></button>
   <dialog class="chat-dialog" id="chat-dialog" aria-label="RetentionLens chatbot"><div class="chat-dialog-bar"><div><span class="chat-fab-dot"></span><strong>RETENTIONLENS / LIVE CHATBOT</strong></div><button type="button" class="chat-close" data-close-chat aria-label="Close chatbot">×</button></div><div class="chat-dialog-body"><iframe title="RetentionLens Chatling chatbot" loading="lazy" src="https://share.chatling.ai/s/cf9R9Zi2D7esy25" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div class="chat-dialog-footer"><span>Having trouble loading the embedded chat?</span><a href="https://share.chatling.ai/s/cf9R9Zi2D7esy25" target="_blank" rel="noopener noreferrer">Open live chat ↗</a></div></dialog>
   <!-- For guaranteed in-page Chatling widget integration, paste YOUR Chatling → Deploy → Website Widget script here and in about.html. See README.md. -->
