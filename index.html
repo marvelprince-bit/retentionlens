@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10100f">
+  <meta name="description" content="RetentionLens is a business decision intelligence prototype that turns customer retention symptoms into testable hypotheses, economic trade-offs, and better decisions.">
+  <meta property="og:title" content="RetentionLens — Stop guessing. Start diagnosing.">
+  <meta property="og:description" content="A more disciplined way to understand business problems and test decisions before spending.">
+  <meta property="og:image" content="assets/retentionlens-poster.jpg">
+  <title>RetentionLens — Stop guessing. Start diagnosing.</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="app.js"></script>
+</head>
+<body class="page-home">
+  <div class="top-strip"><span>RETENTIONLENS / FIELD NOTES NO. 001</span><span>THE BUSINESS OF BETTER DECISIONS</span></div>
+  <header class="site-header wrap">
+    <a class="brand" href="index.html" aria-label="RetentionLens home"><span class="brand-mark" aria-hidden="true"><span></span></span><span>RETENTION<span class="brand-light">LENS</span><sup>®</sup></span></a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a class="nav-link active" href="index.html">The idea</a>
+      <a class="nav-link" href="about.html">Inside the system</a>
+      <a class="nav-action" href="#case-lab">Explore the demo <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section class="hero wrap" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="signal-dot"></span> THE DECISION INTELLIGENCE EXPERIMENT</div>
+        <h1 id="hero-heading">DON’T<br>GUESS.<br><span>DIAGNOSE.</span></h1>
+        <p class="hero-sub">Revenue is slipping. Customers are leaving. Everyone has an answer. <strong>But what if the obvious fix is the wrong one?</strong></p>
+        <div class="hero-actions">
+          <a class="btn btn-accent" href="#case-lab">Run a scenario <span>↗</span></a>
+          <a class="btn btn-outline" href="about.html">Inside the system <span>↗</span></a>
+        </div>
+        <div class="hero-foot"><span class="tiny-rule"></span><span>CONCEPT + WORKING LAB PROTOTYPE<br>BUILT TO TURN ASSUMPTIONS INTO TESTS</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="video-header"><span><i class="live-indicator"></i> IN MOTION / 00:05</span><span>01 — THE SIGNAL</span></div>
+        <div class="video-frame">
+          <video class="hero-video" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/retentionlens-poster.jpg" aria-label="AI-generated animation of warehouse operations and a diagnostic scan">
+            <source src="assets/retentionlens-film.mp4" type="video/mp4">
+            <source src="assets/retentionlens-animation.gif" type="image/gif">
+            Your browser does not support HTML5 video.
+          </video>
+          <div class="video-gradient" aria-hidden="true"></div>
+          <span class="film-tag">AI-GENERATED SHORT FILM</span>
+          <span class="film-counter">NO. 001 / RETENTIONLENS</span>
+        </div>
+        <div class="video-caption"><span>A DIAGNOSIS BEFORE A DECISION.</span><span>SCROLL TO INVESTIGATE <span aria-hidden="true">↓</span></span></div>
+      </div>
+    </section>
+
+    <section class="thesis-section" aria-labelledby="thesis-title">
+      <div class="wrap thesis-layout">
+        <div class="section-id">[ 01 ]<br>THE PROBLEM</div>
+        <div class="thesis-content">
+          <p class="kicker">THE REAL COST IS NOT ALWAYS THE PROBLEM.</p>
+          <h2 id="thesis-title">IT’S THE <em>WRONG RESPONSE.</em></h2>
+          <p class="thesis-description">A drop in repeat purchases could mean late deliveries, poor product fit, aggressive competitors, or something else entirely. Cutting prices might feel decisive, but without evidence it may only destroy margin.</p>
+          <div class="three-steps">
+            <article><span class="step-num">01 / OBSERVE</span><h3>Find the signal.</h3><p>Separate known facts from assumptions and missing data.</p></article>
+            <article><span class="step-num">02 / CHALLENGE</span><h3>Test the story.</h3><p>Consider competing explanations and measurable experiments.</p></article>
+            <article><span class="step-num">03 / DECIDE</span><h3>Price the choice.</h3><p>Explore possible value, cost, and uncertainty before action.</p></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="case-section wrap" id="case-lab" aria-labelledby="case-title">
+      <div class="case-heading">
+        <div><div class="section-id in-flow">[ 02 ] / THE INTERACTIVE CASE LAB</div><h2 id="case-title">WHAT DOES A<br><em>BETTER DECISION</em> LOOK LIKE?</h2></div>
+        <p>Change the assumptions. See how the economics shift. A hypothesis isn't a fact—and a forecast isn't proof.</p>
+      </div>
+      <div class="case-lab">
+        <div class="lab-controls">
+          <div class="lab-bar"><span>SCENARIO BUILDER</span><span class="lab-live"><span class="live-indicator"></span> INTERACTIVE</span></div>
+          <p class="lab-instruction">Pick a business problem:</p>
+          <div class="scenario-tabs" role="group" aria-label="Choose business scenario">
+            <button type="button" class="scenario-tab selected" data-scenario="delivery" aria-pressed="true">01 <span>Delivery friction</span></button>
+            <button type="button" class="scenario-tab" data-scenario="price" aria-pressed="false">02 <span>Price pressure</span></button>
+            <button type="button" class="scenario-tab" data-scenario="product" aria-pressed="false">03 <span>Product mismatch</span></button>
+          </div>
+          <div class="diagnosis" aria-live="polite"><span class="micro-label">WORKING HYPOTHESIS</span><p id="hypothesis-text">Late or unreliable fulfillment may be causing customer exits. Verify whether churn is concentrated among delayed orders before committing to a fix.</p></div>
+          <div class="control-stack">
+            <label class="range-control" for="customers"><span>Monthly active customers</span><output id="customers-value" for="customers">18,000</output><input id="customers" type="range" min="1000" max="50000" step="1000" value="18000"></label>
+            <label class="range-control" for="churn"><span>Monthly customer churn</span><output id="churn-value" for="churn">12%</output><input id="churn" type="range" min="1" max="35" step="1" value="12"></label>
+            <label class="range-control" for="revenue"><span>Monthly revenue per customer</span><output id="revenue-value" for="revenue">$72</output><input id="revenue" type="range" min="10" max="500" step="2" value="72"></label>
+            <label class="range-control" for="improvement"><span>Target relative churn reduction</span><output id="improvement-value" for="improvement">25%</output><input id="improvement" type="range" min="0" max="50" step="1" value="25"></label>
+            <label class="range-control" for="cost"><span>Monthly cost of intervention</span><output id="cost-value" for="cost">$12,000</output><input id="cost" type="range" min="0" max="50000" step="500" value="12000"></label>
+          </div>
+          <button class="reset-button" type="button" id="reset-scenario">↺ Reset this scenario</button>
+        </div>
+        <div class="lab-results">
+          <div class="lab-bar invert"><span>ECONOMIC MODEL / ILLUSTRATIVE</span><span>RECALCULATES LIVE <span aria-hidden="true">↗</span></span></div>
+          <div class="result-primary"><span class="micro-label">MODELED ANNUAL NET VALUE</span><strong id="net-value" aria-live="polite">+$322,560</strong><p id="verdict">Potentially attractive economics—but only if the intervention causally reduces churn.</p></div>
+          <div class="result-grid"><div><span class="micro-label">MONTHLY REVENUE AT RISK</span><strong id="at-risk">$155,520</strong></div><div><span class="micro-label">MODELED MONTHLY REVENUE RECOVERED</span><strong id="recovered">$38,880</strong></div><div><span class="micro-label">MONTHLY INTERVENTION COST</span><strong id="cost-result">$12,000</strong></div><div><span class="micro-label">MODELED MONTHLY NET</span><strong id="net-monthly">+$26,880</strong></div></div>
+          <div class="decision-note"><span class="decision-icon">!</span><p><b>DECISION CHECK</b><br><span id="decision-check">Do not roll out based on this calculator. First compare treatment and control groups, then measure repeat purchase and delivery performance.</span></p></div>
+          <p class="model-note">Transparent assumptions: churned customers × monthly revenue/customer = revenue at risk; relative churn reduction × revenue at risk = modeled recovered revenue; minus intervention cost = net. Multiply monthly net by 12 for a steady-state annual illustration. This is not causal proof, a validated forecast, or a substitute for cohort analysis.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="conversation-section">
+      <div class="wrap conversation-grid"><div class="section-id">[ 03 ]<br>GO DEEPER</div><div><p class="kicker">NOW ASK A BETTER QUESTION.</p><h2>YOUR BUSINESS IS<br><em>NOT A TEMPLATE.</em></h2><p>Describe what is changing in your business. The working RetentionLens Lab 3 chatbot explores plausible drivers, asks follow-up questions, and suggests evidence to gather before choosing an intervention.</p><div class="conversation-actions"><button class="btn btn-accent" type="button" data-open-chat>Talk to RetentionLens <span>↗</span></button><a class="text-button" target="_blank" rel="noopener noreferrer" href="https://share.chatling.ai/s/cf9R9Zi2D7esy25">Open full chatbot <span>↗</span></a></div></div></div>
+    </section>
+
+    <section class="x-factor-footer wrap" aria-labelledby="xfactor-title"><span class="micro-label" id="xfactor-title">CLASS 5 / CREATIVE X-FACTOR</span><p>The interactive Case Lab lets visitors choose business scenarios and adjust five assumptions to see real-time revenue-risk and intervention-value calculations. Its decision checks highlight why simulated financial upside is not evidence of causality.</p></section>
+  </main>
+  <footer class="site-footer"><div class="wrap footer-row"><div class="footer-brand">RETENTION<span>LENS</span><small>DECIDE WITH EVIDENCE.</small></div><div><a href="about.html">Inside the system ↗</a><a href="https://share.chatling.ai/s/cf9R9Zi2D7esy25" target="_blank" rel="noopener noreferrer">Working chatbot ↗</a></div><p>Independent concept and educational prototype.<br>© 2026 RetentionLens.</p></div></footer>
+  <button class="chat-fab" type="button" data-open-chat aria-label="Open RetentionLens chatbot"><span class="chat-fab-dot"></span> ASK RETENTIONLENS <span aria-hidden="true">↗</span></button>
+  <dialog class="chat-dialog" id="chat-dialog" aria-label="RetentionLens chatbot"><div class="chat-dialog-bar"><div><span class="chat-fab-dot"></span><strong>RETENTIONLENS / LIVE CHATBOT</strong></div><button type="button" class="chat-close" data-close-chat aria-label="Close chatbot">×</button></div><div class="chat-dialog-body"><iframe title="RetentionLens Chatling chatbot" loading="lazy" src="https://share.chatling.ai/s/cf9R9Zi2D7esy25" referrerpolicy="strict-origin-when-cross-origin"></iframe></div><div class="chat-dialog-footer"><span>Having trouble loading the embedded chat?</span><a href="https://share.chatling.ai/s/cf9R9Zi2D7esy25" target="_blank" rel="noopener noreferrer">Open live chat ↗</a></div></dialog>
+  <!-- For guaranteed in-page Chatling widget integration, paste YOUR Chatling → Deploy → Website Widget script here and in about.html. See README.md. -->
+</body>
+</html>
