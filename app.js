@@ -1,15 +1,7 @@
 /** RetentionLens Lab 5 static site interactions. No personal information is sent or stored by this calculator. */
 (() => {
   'use strict';
-  const chat = document.getElementById('chat-dialog');
-  if (chat) {
-    document.querySelectorAll('[data-open-chat]').forEach(btn => btn.addEventListener('click', () => {
-      if (typeof chat.showModal === 'function') chat.showModal();
-      else window.open('https://share.chatling.ai/s/cf9R9Zi2D7esy25', '_blank', 'noopener,noreferrer');
-    }));
-    document.querySelectorAll('[data-close-chat]').forEach(btn => btn.addEventListener('click', () => chat.close()));
-    chat.addEventListener('click', e => { if (e.target === chat) chat.close(); });
-  }
+  // The official Chatling widget is injected in each HTML page.
   // Some mobile browsers reject unmuted autoplay; the media element is muted and inline.
   const film = document.querySelector('.hero-video');
   if (film) {
